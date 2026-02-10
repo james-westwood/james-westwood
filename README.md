@@ -1,16 +1,29 @@
-## Hi there 👋
+**Senior Data Scientist** building production ML/GenAI systems at the Food Standards Agency. Previously led open-source data engineering at the Office for National Statistics.
 
-<!--
-**james-westwood/james-westwood** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## 🚀 Current Work (Private Repos)
+- 🤖 **LangChain Agent** - Intelligent data standardization for 360+ local authority data sources with extreme format variance
+- 🎯 **NLP Classification** - DistilBERT transformer model (82% accuracy, 240-class classification) on Azure
+- ☁️ **Platform Engineering** - Migrating enterprise data to Databricks Medallion architecture (Azure/Databricks)
+- 🔧 **ML Production Systems** - Full lifecycle deployment, monitoring, MLOps best practices
 
-Here are some ideas to get you started:
+## 🛠️ Tech Stack
+**ML/GenAI:** LangChain • Transformers (DistilBERT, FastText) • Scikit-learn • PyTorch • MLFlow  
+**Data Engineering:** Databricks • PySpark • Apache Spark • Python • SQL  
+**Cloud & DevOps:** Azure • GCP • GitHub Actions • CI/CD  
+**Databases:** PostgreSQL • BigQuery • DuckDB
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 📂 Featured Open Source Work
+
+### [ONS Research & Development Statistics](https://github.com/ONSdigital/research-and-development)
+Production system calculating UK national accounts R&D expenditure statistics. **Pioneered open-source approach** within ONS, establishing pattern for government data science transparency.
+
+**Scale & Impact:**
+- 4,680+ commits across 20 contributors
+- 94 production releases serving national statistics
+- Comprehensive CI/CD pipeline, testing (61% coverage), with excellent technical and non-technical user documentation
+- Set precedent for open-source government data projects at ONS
+
+**Role:** Technical lead and open-source advocate - negotiated stakeholder approval for public release from project inception.
+
+## 🎯 Professional Focus
+Sustainability • Food Systems • Production ML systems • Data engineering best practices • Practical AI applications • Open government software
