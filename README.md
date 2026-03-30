@@ -12,6 +12,18 @@
 **Cloud & DevOps:** Azure • GCP • GitHub Actions • CI/CD  
 **Databases:** PostgreSQL • BigQuery • DuckDB
 
+## Sustainable Transport & Energy
+
+A thread running through my open source work:
+
+| Project | What it does | SDG |
+|---|---|---|
+| [SDG 11.2.1 — Transport Access](https://github.com/ONSdigital/SDG_11.2.1) | Measures % of UK population with convenient access to public transport, disaggregated by age, sex and disability | SDG 11 |
+| [Public Transport Efficiency](https://github.com/jwestw/Public_Transport_Efficiency) | Ranks UK cities by public vs private transport journey time ratio | SDG 11 |
+| [EV Charging Demand Optimisation](https://github.com/james-westwood/EV-Charging-Demand-Optimisation) | Forecasts grid carbon intensity and optimises EV charging schedules to minimise emissions | SDG 7, 13 |
+
+At ONS I measured the gap between where we are and where we need to be on sustainable transport and clean energy. Now I'm building systems to close it.
+
 ## Featured Open Source Work
 
 Unfortunately the vast majority of my work is closed-source but I pioneered the use of an open-from-the-start that adheres to [government guidelines](https://www.gov.uk/guidance/be-open-and-use-open-source). 
