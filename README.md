@@ -18,9 +18,9 @@ A thread running through my open source work:
 
 | Project | What it does | SDG |
 |---|---|---|
-| [SDG 11.2.1 — Transport Access](https://github.com/ONSdigital/SDG_11.2.1) | Measures % of UK population with convenient access to public transport, disaggregated by age, sex and disability | SDG 11 |
-| [Public Transport Efficiency](https://github.com/jwestw/Public_Transport_Efficiency) | Ranks UK cities by public vs private transport journey time ratio | SDG 11 |
-| [EV Charging Demand Optimisation](https://github.com/james-westwood/EV-Charging-Demand-Optimisation) | Forecasts grid carbon intensity and optimises EV charging schedules to minimise emissions | SDG 7, 13 |
+| [SDG 11.2.1 — Transport Access](https://github.com/ONSdigital/SDG_11.2.1) | Measures % of UK population with convenient access to public transport, disaggregated by age, sex and disability | [SDG 11]([url](https://sdgdata.gov.uk/11/)) |
+| [Public Transport Efficiency](https://github.com/jwestw/Public_Transport_Efficiency) | Ranks UK cities by public vs private transport journey time ratio | [SDG 11]([url](https://sdgdata.gov.uk/11/)) |
+| [EV Charging Demand Optimisation](https://github.com/james-westwood/EV-Charging-Demand-Optimisation) | Forecasts grid carbon intensity and optimises EV charging schedules to minimise emissions | [SDG 7]([url](https://sdgdata.gov.uk/7/)), [SDG 13]([url](https://sdgdata.gov.uk/13/)) |
 
 As a member of the **ONS Sustainable Development Goals team**, I helped maintain the [UK Sustainable Indicators website]([url](https://sdgdata.gov.uk/)) and built data pipelines to measure the UK's progress toward the UN SDGs, tracking public transport access and efficiency across UK cities. I was measuring the gap between where we are and where we need to be. Now I'm building systems to close it.
 
