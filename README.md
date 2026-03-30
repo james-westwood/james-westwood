@@ -10,7 +10,7 @@
 **ML/GenAI:** LangChain • Transformers (DistilBERT, FastText) • Scikit-learn • PyTorch • MLFlow  
 **Data Engineering:** Databricks • PySpark • Apache Spark • Python • SQL  
 **Cloud & DevOps:** Azure • GCP • GitHub Actions • CI/CD  
-**Databases:** PostgreSQL • BigQuery • DuckDB
+**Databases:** BigQuery • DuckDB
 
 ## Sustainable Transport & Energy
 
@@ -22,7 +22,7 @@ A thread running through my open source work:
 | [Public Transport Efficiency](https://github.com/jwestw/Public_Transport_Efficiency) | Ranks UK cities by public vs private transport journey time ratio | SDG 11 |
 | [EV Charging Demand Optimisation](https://github.com/james-westwood/EV-Charging-Demand-Optimisation) | Forecasts grid carbon intensity and optimises EV charging schedules to minimise emissions | SDG 7, 13 |
 
-As a member of the **ONS Sustainable Development Goals team**, I built data pipelines to measure the UK's progress toward the UN SDGs, tracking public transport access and efficiency across UK cities. I was measuring the gap between where we are and where we need to be. Now I'm building systems to close it.
+As a member of the **ONS Sustainable Development Goals team**, I helped maintain the [UK Sustainable Indicators website]([url](https://sdgdata.gov.uk/)) and built data pipelines to measure the UK's progress toward the UN SDGs, tracking public transport access and efficiency across UK cities. I was measuring the gap between where we are and where we need to be. Now I'm building systems to close it.
 
 ## Featured Open Source Work
 
@@ -37,7 +37,7 @@ Production system calculating UK national accounts R&D expenditure statistics. *
 - Comprehensive CI/CD pipeline, testing (61% coverage), with excellent technical and non-technical user documentation
 - Set precedent for open-source government data projects at ONS
 
-**Role:** Technical lead and open-source advocate - negotiated stakeholder approval for public release from project inception.
+**Role:** Tech-lead and open-source advocate, stakeholder liaison gaining approval for public release from project inception.
 
-## 🎯 Professional Focus
+## Professional Focus
 Sustainability • Food Systems • Production ML systems • Data engineering best practices • Practical AI applications • Open government software
