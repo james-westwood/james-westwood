@@ -159,6 +159,9 @@
   background: var(--status-error);
   box-shadow: 0 0 0 3px color-mix(in oklch, var(--status-error) 25%, transparent);
 }
+.api-status[data-state="ok"] .dot {
+  animation: pulse-gentle 2.5s var(--ease) infinite;
+}
 .api-status[data-state="loading"] .dot {
   background: var(--status-progress);
   animation: pulse 1.4s var(--ease) infinite;
@@ -166,6 +169,10 @@
 @keyframes pulse {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.4; }
+}
+@keyframes pulse-gentle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.75; }
 }
 
 /* SDG badge */
