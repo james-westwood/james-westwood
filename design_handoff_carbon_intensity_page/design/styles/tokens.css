@@ -1,0 +1,302 @@
+/* ============================================================
+   JW.dev Design System — Foundations
+   ------------------------------------------------------------
+   Tokens for: color, typography, spacing, radii, shadows, motion.
+   The ACCENT is rotated per project (one of the SDG colours).
+   Default page accent is SDG 7 (carbon intensity, the flagship).
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+:root {
+  /* ---------- COLOR · NEUTRAL CHASSIS ---------- */
+  --bg-0: #0B0F14;          /* page background, deepest */
+  --bg-1: #10161D;          /* surface — cards, panels */
+  --bg-2: #161E27;          /* hovered/raised surface */
+  --bg-3: #1C2632;          /* code block, terminal */
+
+  --fg-1: #E6EDF3;          /* primary text */
+  --fg-2: #B6C2CF;          /* secondary text, icons */
+  --fg-3: #7D8B9B;          /* tertiary text, axis labels, captions */
+  --fg-4: #4A5663;          /* disabled, dividers in copy */
+
+  --border-1: #1E2630;      /* default 1px borders */
+  --border-2: #2A3441;      /* emphasised borders */
+  --border-3: #3A4756;      /* focus rings on neutral elements */
+
+  /* ---------- COLOR · UN SDG PALETTE (official hexes) ---------- */
+  --sdg-1:  #E5243B;  /* No Poverty */
+  --sdg-2:  #DDA63A;  /* Zero Hunger */
+  --sdg-3:  #4C9F38;  /* Good Health and Well-Being */
+  --sdg-4:  #C5192D;  /* Quality Education */
+  --sdg-5:  #FF3A21;  /* Gender Equality */
+  --sdg-6:  #26BDE2;  /* Clean Water and Sanitation */
+  --sdg-7:  #FCC30B;  /* Affordable and Clean Energy */
+  --sdg-8:  #A21942;  /* Decent Work and Economic Growth */
+  --sdg-9:  #FD6925;  /* Industry, Innovation and Infrastructure */
+  --sdg-10: #DD1367;  /* Reduced Inequalities */
+  --sdg-11: #FD9D24;  /* Sustainable Cities and Communities */
+  --sdg-12: #BF8B2E;  /* Responsible Consumption and Production */
+  --sdg-13: #3F7E44;  /* Climate Action */
+  --sdg-14: #0A97D9;  /* Life Below Water */
+  --sdg-15: #56C02B;  /* Life on Land */
+  --sdg-16: #00689D;  /* Peace, Justice and Strong Institutions */
+  --sdg-17: #19486A;  /* Partnerships for the Goals */
+
+  /* ---------- COLOR · ACCENT (page-level, swappable) ---------- */
+  --accent:        var(--sdg-7);     /* default flagship colour */
+  --accent-soft:   color-mix(in oklch, var(--accent) 20%, var(--bg-1));
+  --accent-strong: color-mix(in oklch, var(--accent) 100%, white 10%);
+  --accent-ink:    #0B0F14;          /* foreground for buttons on accent fill */
+
+  /* ---------- COLOR · SEMANTIC STATUS ---------- */
+  --status-deployed:   #4C9F38;     /* SDG 3 — green */
+  --status-progress:   #FCC30B;     /* SDG 7 — amber */
+  --status-archived:   #7D8B9B;     /* fg-3 — neutral grey */
+  --status-error:      #E5243B;     /* SDG 1 — red */
+
+  /* ---------- TYPOGRAPHY · FAMILIES ---------- */
+  --font-sans: 'Inter Tight', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, monospace;
+
+  /* ---------- TYPOGRAPHY · SCALE (1.2 ratio) ---------- */
+  --fs-12: 12px;   /* metadata, captions */
+  --fs-13: 13px;   /* mono small */
+  --fs-14: 14px;   /* secondary UI */
+  --fs-16: 16px;   /* body */
+  --fs-18: 18px;   /* lede */
+  --fs-20: 20px;   /* h4 */
+  --fs-24: 24px;   /* h3, project title */
+  --fs-28: 28px;   /* h2, hero */
+  --fs-32: 32px;   /* h1 page title */
+  --fs-40: 40px;   /* reserved, rarely used */
+
+  /* ---------- TYPOGRAPHY · WEIGHTS ---------- */
+  --fw-regular: 400;
+  --fw-medium:  500;
+  --fw-semibold: 600;
+  --fw-bold:    700;
+
+  /* ---------- TYPOGRAPHY · LINE HEIGHTS ---------- */
+  --lh-tight:    1.2;
+  --lh-snug:     1.4;
+  --lh-base:     1.6;
+  --lh-prose:    1.7;
+  --lh-mono:     1.5;
+
+  /* ---------- TYPOGRAPHY · TRACKING ---------- */
+  --ls-tight:    -0.01em;
+  --ls-base:     0;
+  --ls-loose:    0.04em;     /* uppercase eyebrows */
+
+  /* ---------- SPACING (4px base) ---------- */
+  --sp-1:  4px;
+  --sp-2:  8px;
+  --sp-3:  12px;
+  --sp-4:  16px;
+  --sp-5:  24px;
+  --sp-6:  32px;
+  --sp-7:  48px;
+  --sp-8:  64px;
+  --sp-9:  96px;
+
+  /* ---------- RADII ---------- */
+  --radius-1: 4px;     /* inputs, small buttons */
+  --radius-2: 6px;     /* cards, panels */
+  --radius-3: 10px;    /* modals */
+  --radius-pill: 9999px; /* used only for status dots */
+
+  /* ---------- SHADOWS (minimal) ---------- */
+  --shadow-1: 0 6px 16px -4px rgba(0, 0, 0, 0.4),
+              0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-focus: 0 0 0 2px var(--bg-0), 0 0 0 4px var(--accent);
+
+  /* ---------- MOTION ---------- */
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+  --dur-fast:   120ms;
+  --dur-base:   200ms;
+  --dur-slow:   320ms;
+
+  /* ---------- LAYOUT ---------- */
+  --max-content: 1120px;
+  --header-h: 64px;
+
+  /* ---------- DOTTED GRID BACKGROUND (only texture) ---------- */
+  --grid-dot: rgba(230, 237, 243, 0.04);
+  --grid-bg: radial-gradient(var(--grid-dot) 1px, transparent 1px);
+  --grid-size: 24px 24px;
+}
+
+/* ============================================================
+   Per-project accent overrides — apply to <body> or a wrapper.
+   Usage:  <body data-accent="sdg-6">  (water project)
+   ============================================================ */
+[data-accent="sdg-1"]  { --accent: var(--sdg-1);  }
+[data-accent="sdg-2"]  { --accent: var(--sdg-2);  }
+[data-accent="sdg-3"]  { --accent: var(--sdg-3);  }
+[data-accent="sdg-4"]  { --accent: var(--sdg-4);  }
+[data-accent="sdg-5"]  { --accent: var(--sdg-5);  }
+[data-accent="sdg-6"]  { --accent: var(--sdg-6);  }
+[data-accent="sdg-7"]  { --accent: var(--sdg-7);  }
+[data-accent="sdg-8"]  { --accent: var(--sdg-8);  }
+[data-accent="sdg-9"]  { --accent: var(--sdg-9);  }
+[data-accent="sdg-10"] { --accent: var(--sdg-10); }
+[data-accent="sdg-11"] { --accent: var(--sdg-11); }
+[data-accent="sdg-12"] { --accent: var(--sdg-12); }
+[data-accent="sdg-13"] { --accent: var(--sdg-13); }
+[data-accent="sdg-14"] { --accent: var(--sdg-14); }
+[data-accent="sdg-15"] { --accent: var(--sdg-15); }
+[data-accent="sdg-16"] { --accent: var(--sdg-16); }
+[data-accent="sdg-17"] { --accent: var(--sdg-17); }
+
+/* ============================================================
+   SEMANTIC ELEMENT STYLES
+   ============================================================ */
+
+html {
+  background: var(--bg-0);
+  color: var(--fg-1);
+  font-family: var(--font-sans);
+  font-size: var(--fs-16);
+  line-height: var(--lh-base);
+  letter-spacing: var(--ls-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-0);
+  color: var(--fg-1);
+  font-family: var(--font-sans);
+}
+
+/* Headings — sentence case, tight tracking */
+h1, .h1 {
+  font-family: var(--font-sans);
+  font-size: var(--fs-32);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-tight);
+  color: var(--fg-1);
+  margin: 0 0 var(--sp-5) 0;
+}
+h2, .h2 {
+  font-size: var(--fs-28);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-tight);
+  color: var(--fg-1);
+  margin: 0 0 var(--sp-4) 0;
+}
+h3, .h3 {
+  font-size: var(--fs-24);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-snug);
+  color: var(--fg-1);
+  margin: 0 0 var(--sp-3) 0;
+}
+h4, .h4 {
+  font-size: var(--fs-20);
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-snug);
+  color: var(--fg-1);
+  margin: 0 0 var(--sp-3) 0;
+}
+
+/* Eyebrow — uppercase mono label above a heading */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--fs-12);
+  font-weight: var(--fw-medium);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-loose);
+  color: var(--accent);
+  margin: 0 0 var(--sp-2) 0;
+}
+
+/* Body */
+p, .p {
+  font-size: var(--fs-16);
+  line-height: var(--lh-prose);
+  color: var(--fg-1);
+  margin: 0 0 var(--sp-4) 0;
+  text-wrap: pretty;
+}
+.lede {
+  font-size: var(--fs-18);
+  line-height: var(--lh-prose);
+  color: var(--fg-1);
+}
+.muted { color: var(--fg-2); }
+.caption {
+  font-family: var(--font-mono);
+  font-size: var(--fs-12);
+  color: var(--fg-3);
+  letter-spacing: var(--ls-loose);
+  text-transform: uppercase;
+}
+
+/* Mono / code */
+code, kbd, pre, .mono {
+  font-family: var(--font-mono);
+  font-size: 0.95em;
+}
+code {
+  color: var(--fg-1);
+  background: var(--bg-2);
+  padding: 1px 6px;
+  border-radius: 3px;
+  border: 1px solid var(--border-1);
+}
+pre {
+  background: var(--bg-3);
+  border: 1px solid var(--border-1);
+  border-radius: var(--radius-2);
+  padding: var(--sp-4);
+  line-height: var(--lh-mono);
+  overflow-x: auto;
+  margin: 0 0 var(--sp-5) 0;
+}
+pre code {
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+kbd {
+  font-family: var(--font-mono);
+  font-size: var(--fs-12);
+  border: 1px solid var(--border-2);
+  border-radius: var(--radius-1);
+  padding: 1px 6px;
+  background: var(--bg-2);
+  color: var(--fg-2);
+}
+
+/* Links — underline appears in accent on hover */
+a {
+  color: var(--fg-1);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--dur-fast) var(--ease),
+              color var(--dur-fast) var(--ease);
+}
+a:hover { border-bottom-color: var(--accent); }
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Selection */
+::selection {
+  background: color-mix(in oklch, var(--accent) 35%, transparent);
+  color: var(--fg-1);
+}
+
+/* Horizontal rule */
+hr {
+  border: 0;
+  border-top: 1px solid var(--border-1);
+  margin: var(--sp-6) 0;
+}
