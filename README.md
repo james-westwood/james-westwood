@@ -4,22 +4,23 @@
 npm create astro@latest -- --template minimal
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Tech Stack
+**ML/GenAI:** LangChain • Transformers (DistilBERT, FastText) • Scikit-learn • PyTorch • MLFlow  
+**Data Engineering:** Databricks • PySpark • Apache Spark • Python • SQL  
+**Cloud & DevOps:** Azure • GCP • GitHub Actions • CI/CD  
+**Databases:** BigQuery • DuckDB
 
 ## 🚀 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+| Project | What it does | SDG |
+|---|---|---|
+| [SDG 11.2.1 — Transport Access](https://github.com/ONSdigital/SDG_11.2.1) | Measures % of UK population with convenient access to public transport, disaggregated by age, sex and disability | [SDG 11]([url](https://sdgdata.gov.uk/11/)) |
+| [Public Transport Efficiency](https://github.com/jwestw/Public_Transport_Efficiency) | Ranks UK cities by public vs private transport journey time ratio | [SDG 11]([url](https://sdgdata.gov.uk/11/)) |
+| [EV Charging Demand Optimisation](https://github.com/james-westwood/EV-Charging-Demand-Optimisation) | Forecasts grid carbon intensity and optimises EV charging schedules to minimise emissions | [SDG 7]([url](https://sdgdata.gov.uk/7/)), [SDG 13]([url](https://sdgdata.gov.uk/13/)) |
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+As a member of the **ONS Sustainable Development Goals team**, I helped maintain the [UK Sustainable Indicators website]([url](https://sdgdata.gov.uk/)) and built data pipelines to measure the UK's progress toward the UN SDGs, tracking public transport access and efficiency across UK cities. I was measuring the gap between where we are and where we need to be. Now I'm building systems to close it.
 
 There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
@@ -29,15 +30,7 @@ Any static assets, like images, can be placed in the `public/` directory.
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+**Role:** Tech-lead and open-source advocate, stakeholder liaison gaining approval for public release from project inception.
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Professional Focus
+Sustainability • Food Systems • Production ML systems • Data engineering best practices • Practical AI applications • Open government software
