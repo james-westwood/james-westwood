@@ -1,19 +1,3 @@
-# Astro Starter Kit: Minimal
-
-```sh
-npm create astro@latest -- --template minimal
-```
-
-## Tech Stack
-**ML/GenAI:** LangChain • Transformers (DistilBERT, FastText) • Scikit-learn • PyTorch • MLFlow  
-**Data Engineering:** Databricks • PySpark • Apache Spark • Python • SQL  
-**Cloud & DevOps:** Azure • GCP • GitHub Actions • CI/CD  
-**Databases:** BigQuery • DuckDB
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
 | Project | What it does | SDG |
 |---|---|---|
 | [SDG 11.2.1 — Transport Access](https://github.com/ONSdigital/SDG_11.2.1) | Measures % of UK population with convenient access to public transport, disaggregated by age, sex and disability | [SDG 11]([url](https://sdgdata.gov.uk/11/)) |
